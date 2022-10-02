@@ -7,7 +7,7 @@ import { Acercadm } from '../model/acercadm';
   providedIn: 'root'
 })
 export class AcercadmService {
-  URL = 'http://localhost:8080/acercadm/';
+  URL = 'https://backend-maru-portafolio.herokuapp.com/acercadm/';
  
   constructor(private httpClient : HttpClient) {}
   

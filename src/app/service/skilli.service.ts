@@ -7,7 +7,7 @@ import { Skilli } from '../model/skilli';
   providedIn: 'root'
 })
 export class SkilliService {
-  URL = 'http://localhost:8080/skilli/';
+  URL = 'https://backend-maru-portafolio.herokuapp.com/skilli/';
  
   constructor(private httpClient : HttpClient) {}
   
