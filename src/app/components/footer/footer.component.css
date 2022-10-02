@@ -1,0 +1,12 @@
+.row{ 
+    background-color:#040d3f;
+    font-family: Century Gothic;
+}
+footer{ 
+    color: #fefefe;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 5px #999;
+}

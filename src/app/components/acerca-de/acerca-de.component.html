@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"> 
+         <div class="imagen" *ngFor="let persona of persona">
+             <img class="img-fluid" src="{{persona.img}}" id="fotodeperfil">
+           <div>
+             <td *ngIf="isLogged">
+             <button class="btn btn-success" routerLink="/editimagen/{{persona.id}}">
+                   <i class="bi bi-pencil"></i>
+             </button></td>
+          </div> 
+         </div>
+     </div>
+    <div class="col-xs-12 col-sm-3 col-md- col-lg-3"> 
+        <div class="nom" *ngFor="let persona of persona">
+             <h2 id="nombre">{{persona.nombre}}<br>{{persona.apellido}}</h2>
+             <h4>Full Stack Developer Jr</h4>
+             <div>
+                <td *ngIf="isLogged">
+                   <button class="btn btn-success" routerLink="/editnombre/{{persona.id}}">
+                           <i class="bi bi-pencil"></i>
+                   </button></td>
+            </div>  
+        </div>
+     </div>    
+    <div class="col-xs-12 col-sm-7 col-md- col-lg-7"> 
+            <h2>Acerca de mí</h2>
+                <!-- <button type="button" class="btn btn-success" routerLink="/newacercadm" *ngIf="isLogged"><i class="bi bi-plus-circle"></i>
+                    Nueva descripcion
+                </button> --> 
+         <div class="acerca" *ngFor="let Acercadm of acercadm">
+            <h5><p>{{Acercadm.descripcion}}</p></h5>
+            <div>
+            <td *ngIf="isLogged">
+               <button class="btn btn-success" routerLink="/editacercadm/{{Acercadm.id}}">
+                       <i class="bi bi-pencil"></i>
+               </button></td>
+          <!--  <td *ngIf="isLogged">
+               <button class= "btn btn-warning" (click)="delete(Acercadm.id)">
+               <i class="bi bi-trash"></i></button></td>-->
+          </div>  
+        </div>
+    </div>    
+</div>

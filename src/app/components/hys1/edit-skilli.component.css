@@ -1,0 +1,31 @@
+.row{ 
+    padding: 20px; 
+    font-family: Century Gothic;
+    flex-wrap: wrap;
+    text-align: justify;
+
+    display:flex;
+    flex-direction: column;
+    align-items: justify;
+      }
+.titulo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.boton {
+    text-align: center; 
+}
+.gradient-custom {
+    background-image: url("https://images.pexels.com/photos/442575/pexels-photo-442575.jpeg?cs=srgb&dl=pexels-jeshootscom-442575.jpg&fm=jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+.card{
+    background: linear-gradient(to right,  #848792,  #b8bbca)
+}

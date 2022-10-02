@@ -1,0 +1,27 @@
+<section class="vh-100 gradient-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+<div class="container"> 
+    <div class="row"> 
+        <div> 
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm"> 
+                <div class="titulo"><h1>Nueva Skill</h1></div>
+                <div class="form-group">
+                <h5><label for="nombre">Nombre de la skill</label></h5> 
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <h5><label for="porcentaje">Porcentaje</label></h5> 
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                </div>
+                <div class="boton">
+                    <button class="btn btn-secondary"><h5>
+                        Agregar skill
+                    </h5></button></div>
+            </form>
+        </div>
+    </div>
+</div>
+</div></div></div></div>

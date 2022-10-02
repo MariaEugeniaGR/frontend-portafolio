@@ -1,0 +1,30 @@
+<section class="vh-100 gradient-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center"> 
+<div class="container" *ngIf="proyecto"> 
+  <div class="row"> 
+      <div> 
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm"> 
+            <div class="titulo"><h1>Proyectos realizados</h1></div>
+              <div class="form-group">
+                 <h4><label for="nombreP">Nombre del proyecto</label></h4> 
+                  <input type="text" class="form-control" id="nombreP" name="nombreP" placeholder="Titulo" [(ngModel)]="proyecto.nombreP" required>
+              </div>
+              <div class="form-group">
+                 <h4><label for="descripcionP">Descripción de proyecto</label></h4> 
+                  <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proyecto.descripcionP" required>
+              </div>
+              <div class="form-group">
+                <h4><label for="imagenP">Imagen del proyecto</label></h4> 
+                 <input type="text" class="form-control" id="imagenP" name="imagenP" [(ngModel)]="proyecto.imagenP" required>
+             </div>
+             <div class="boton">
+              <button class="btn btn-secondary"><h5>
+                  Actualizar
+                </h5></button></div>
+          </form>
+      </div>
+  </div>
+</div></div>

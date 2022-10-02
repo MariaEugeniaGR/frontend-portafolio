@@ -1,0 +1,30 @@
+.row{ 
+    padding: 20px; 
+    font-family: Century Gothic;
+    flex-wrap: wrap;
+    
+    @media(max-width:575px){ 
+    flex-direction: column;
+}
+}
+div{ 
+    background-color: #adb0bf;
+}
+
+.imagenE{
+    width: 170px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: center;
+  }
+
+h1, h2, h4{ 
+    Display: flex;
+}
+h1{ 
+    color: #ffff; 
+}
+.table{
+    text-align: justify;
+}

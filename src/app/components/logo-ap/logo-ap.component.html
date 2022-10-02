@@ -1,0 +1,14 @@
+<div class="row"> 
+    <div class="container"> 
+       <div class="logo"> 
+          <a href= ""><img src="../../../assets/APLogo-20-20.png" id="logoAP"></a>
+          <a href= ""><img src="../../../assets/LogosInti.png" id="logosInti" ></a>
+       </div>
+       <div class="redes"> 
+          <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BE0O4PHMfSwWUogktuTnYtQ%3D%3D" target="_blank"><img src="../../../assets/kisspng-line-angle-font-5b5921b96be2c6.6155346715325679934419.png" id="linkedin"></a>
+          <a href="https://github.com/MariaEugeniaGR" target="_blank"><img src="../../../assets/kisspng-github-pages-logo-repository-fork-github-logo-1-magentys-5b69de71b51265.8586076615336648817417.png" id="github"></a>
+          <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingreso</button>
+          <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
+      </div>
+    </div>
+  </div>

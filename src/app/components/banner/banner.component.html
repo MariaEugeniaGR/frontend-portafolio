@@ -1,0 +1,36 @@
+<!--<button type="button"  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" routerLink="/banner/{{banner.id}}">
+    <i class="bi bi-pencil"></i>
+</button>
+  <div class="modal-dialog">
+    <div class="modal-content" *ngIf="banner">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Banner</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="mb-3">
+                <label for="imagenB" class="col-form-label">URL del Banner</label>
+                 <input type="text" class="form-control" id="imagenB" name="imagenB" [(ngModel)]="banner.imagenB" required>
+             </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Modificar</button>
+      </div>
+    </div>
+  </div>
+-->
+<div class="row"*ngFor="let Banner of banner"> 
+    <td *ngIf="isLogged"> 
+      <div class="boton">
+        <button class="btn btn-success" routerLink="/editbanner/{{Banner.id}}">
+            <i class="bi bi-pencil"></i>
+        </button>
+      </div>
+       </td>
+    <div class="col-lg-12" >
+        <img src="{{Banner.imagenB}}"class="img-fluid"> 
+    </div>
+</div>
