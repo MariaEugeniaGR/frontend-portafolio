@@ -2,29 +2,30 @@
     padding: 20px; 
     font-family: Century Gothic;
     flex-wrap: wrap;
-    
+
     @media(max-width:575px){ 
+    display:flex;
     flex-direction: column;
-}
+    align-items: center;
+    }
+
 }
 div{ 
-    background-color: #adb0bf;
+    background-color: #adb0bf; 
 }
-
+h1, h2, h4{ 
+    display: flex;
+}
+h1{ 
+    color:aliceblue
+}
 .imagenE{
-    width: 170px;
+    width: 155px;
     display:flex;
     flex-direction: column;
     align-items: center;
     object-fit: center;
   }
-
-h1, h2, h4{ 
-    Display: flex;
-}
-h1{ 
-    color: #ffff; 
-}
 .table{
     text-align: justify;
 }
